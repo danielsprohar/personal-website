@@ -3,4 +3,8 @@
     --background-color: #222225;
     --font-color: #e8e9ed;
   }
+
+  .btn {
+    color: var(--invert-font-color);
+  }
 }
