@@ -2,12 +2,19 @@
   <div class="terminal-nav">
     <header class="terminal-logo">
       <div class="logo terminal-prompt">
-        <a class="no-style" href="/">~</a>
+        <a data-test="homeLink" class="no-style" routerLink="/"> ~ </a>
+        <ng-container *ngIf="url$ | async as url">
+          <span>{{ url }}</span>
+        </ng-container>
       </div>
     </header>
     <nav class="terminal-menu">
       <ul>
-        <li><a class="menu-item" routerLink="/contact">Contact</a></li>
+        <li>
+          <a data-test="contactLink" class="menu-item" routerLink="/contact">
+            Contact
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
