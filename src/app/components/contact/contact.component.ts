@@ -85,5 +85,6 @@ export class ContactComponent implements OnInit {
   handleSubmit() {
     if (this.contactForm.invalid) return;
     console.log(this.contactForm.value);
+    // TODO: Send email
   }
 }
