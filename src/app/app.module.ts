@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
     NavbarComponent,
     ContactComponent,
     HomeComponent,
+    PageNotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, RouterModule],
   providers: [],
