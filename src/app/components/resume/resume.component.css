@@ -1,25 +1,7 @@
-.resume {
-  display: flex;
-  flex-direction: column;
-  row-gap: 32px;
-}
-
-.my-name {
-  font-size: 36px;
-}
-
-header h2::before {
-  content: "> ";
-}
-
-section .content {
-  padding-left: 28px;
-}
-
 .entry address::before {
   content: "// ";
 }
 
 .skills-list {
-  margin: 8px 0 16px 0;
+  margin: 8px 0 16px 8px;
 }

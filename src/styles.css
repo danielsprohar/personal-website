@@ -1,3 +1,7 @@
+:root {
+  --global-font-size: 16px;
+}
+
 h1,
 h2,
 h3,
@@ -7,6 +11,10 @@ h6,
 p {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 36px;
 }
 
 .flex {
@@ -40,6 +48,24 @@ p {
   text-align: center;
 }
 
+.sections {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+}
+
+.section-header {
+  margin-bottom: 1em;
+}
+
+section .header-title::before {
+  content: "> ";
+}
+
+section .content {
+  margin-left: 28px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #222225;
@@ -48,5 +74,11 @@ p {
 
   .btn {
     color: var(--invert-font-color);
+  }
+}
+
+@media print {
+  body {
+    font-size: 12px;
   }
 }
