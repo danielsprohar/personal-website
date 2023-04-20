@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ResumeComponent } from './components/resume/resume.component';
     HomeComponent,
     PageNotFoundComponent,
     ResumeComponent,
+    PortfolioComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, RouterModule],
   providers: [],
