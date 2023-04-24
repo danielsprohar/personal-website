@@ -8,13 +8,10 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-<<<<<<< HEAD
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ResumeComponent } from './components/resume/resume.component';
-=======
 import { NavbarComponent } from './components/navbar/navbar.component';
->>>>>>> firebase
 
 @NgModule({
   declarations: [
