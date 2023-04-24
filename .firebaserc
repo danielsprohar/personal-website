@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "sprohar-dev"
+  },
+  "targets": {
+    "sprohar-dev": {
+      "hosting": {
+        "sprohar.dev": [
+          "sprohar-dev"
+        ]
+      }
+    }
+  }
+}
