@@ -1,3 +1,10 @@
+.gitlab-logo {
+  height: 32px;
+  width: 32px;
+  margin-top: 4px;
+  flex-grow: 0;
+}
+
 @media print {
   #header,
   #footer,
