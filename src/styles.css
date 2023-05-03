@@ -32,6 +32,10 @@ h1 {
   justify-content: center;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .column-gap-1 {
   column-gap: 1em;
 }
@@ -46,6 +50,10 @@ h1 {
 
 .text-centered {
   text-align: center;
+}
+
+.spacer {
+  flex: 1;
 }
 
 .sections {
@@ -64,21 +72,4 @@ section .header-title::before {
 
 section .content {
   margin-left: 28px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #222225;
-    --font-color: #e8e9ed;
-  }
-
-  .btn {
-    color: var(--invert-font-color);
-  }
-}
-
-@media print {
-  body {
-    font-size: 12px;
-  }
 }
