@@ -1,7 +1,9 @@
-.entry address::before {
+address::before {
   content: "// ";
 }
 
-.skills-list {
-  margin: 8px 0 16px 8px;
+.sections {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
 }
