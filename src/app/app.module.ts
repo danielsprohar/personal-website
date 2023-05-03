@@ -7,11 +7,12 @@ import { RouterModule } from '@angular/router';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ResumeComponent } from './components/resume/resume.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     PageNotFoundComponent,
     ResumeComponent,
     PortfolioComponent,
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,
