@@ -2,19 +2,9 @@
   --global-font-size: 16px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  font-size: 36px;
+html,
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .flex {
@@ -54,22 +44,4 @@ h1 {
 
 .spacer {
   flex: 1;
-}
-
-.sections {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2em;
-}
-
-.section-header {
-  margin-bottom: 1em;
-}
-
-section .header-title::before {
-  content: "> ";
-}
-
-section .content {
-  margin-left: 28px;
 }
