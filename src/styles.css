@@ -1,45 +1,6 @@
-:root {
-  --global-font-size: 16px;
-}
-
 html,
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.column-gap-1 {
-  column-gap: 1em;
-}
-
-.row-gap-1 {
-  row-gap: 1em;
-}
-
-.mb-1 {
-  margin-bottom: 1em;
-}
-
-.text-centered {
-  text-align: center;
 }
 
 .spacer {
