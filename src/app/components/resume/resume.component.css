@@ -1,9 +1,0 @@
-address::before {
-  content: "// ";
-}
-
-.sections {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2em;
-}
