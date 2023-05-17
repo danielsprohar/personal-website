@@ -1,0 +1,11 @@
+li.list-group-item.border-0::before {
+  content: "• ";
+}
+
+.details {
+  margin-left: 1em;
+}
+
+.details-key::after {
+  content: ":";
+}
