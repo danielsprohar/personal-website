@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, fromEvent, map } from 'rxjs';
+import { BehaviorSubject, fromEvent, map, shareReplay } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -11,7 +11,10 @@ export class ThemeService {
   readonly mql$ = fromEvent(
     window.matchMedia('(prefers-color-scheme: dark)'),
     'change'
-  ).pipe(map((event: Event) => event.target as MediaQueryList));
+  ).pipe(
+    shareReplay(),
+    map((event: Event) => event.target as MediaQueryList)
+  );
 
   constructor() {}
 
@@ -20,10 +23,10 @@ export class ThemeService {
   }
 
   setLightTheme() {
-    this._isDarkTheme$.next(false)
+    this._isDarkTheme$.next(false);
   }
 
   setDarkTheme() {
-    this._isDarkTheme$.next(true)
+    this._isDarkTheme$.next(true);
   }
 }

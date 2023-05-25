@@ -1,8 +1,9 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-md bg-body-tertiary">
   <div class="container">
     <a class="navbar-brand" routerLink="/" [style.font-family]="'Pacifico'">
       Daniel Sprohar
     </a>
+
     <button
       class="navbar-toggler"
       type="button"
@@ -30,6 +31,12 @@
           </a>
         </li>
       </ul>
+
+      <button class="btn icon-btn" (click)="toggleTheme()">
+        <span class="material-symbols-outlined">
+          {{ (isDarkTheme$ | async) ? "light_mode" : "dark_mode" }}
+        </span>
+      </button>
     </div>
   </div>
 </nav>
