@@ -9,3 +9,7 @@ li.list-group-item.border-0::before {
 .details-key::after {
   content: ":";
 }
+
+h2 {
+  font-weight: 600;
+}
