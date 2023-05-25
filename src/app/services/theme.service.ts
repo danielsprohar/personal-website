@@ -5,7 +5,7 @@ import { BehaviorSubject, fromEvent, map, shareReplay } from 'rxjs';
   providedIn: 'root',
 })
 export class ThemeService {
-  private readonly _isDarkTheme$ = new BehaviorSubject<boolean>(true);
+  private readonly _isDarkTheme$ = new BehaviorSubject<boolean>(false);
   readonly isDarkTheme$ = this._isDarkTheme$.asObservable();
 
   readonly mql$ = fromEvent(
